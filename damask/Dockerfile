@@ -14,4 +14,7 @@ WORKDIR "/home"
 COPY DAMASK-development.tar.gz DAMASK.tar.gz
 RUN  tar -xzvf DAMASK.tar.gz && mv DAMASK-development DAMASK
 WORKDIR "/home/DAMASK"
+RUN yes | pip3 install numpy scipy pillow vtk h5py
+RUN echo 'alias python=python3' >> /root/.bashrc
+RUN echo 'alias pip=pip3' >> /root/.bashrc
 RUN ["/bin/bash", "-c", "echo '. /home/DAMASK/env/DAMASK.sh' >> /root/.bashrc"]
