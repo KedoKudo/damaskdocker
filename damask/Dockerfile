@@ -21,3 +21,4 @@ RUN echo 'alias pip=pip3' >> /root/.bashrc
 RUN ["/bin/bash", "-c", "echo '. /home/DAMASK/env/DAMASK.sh' >> /root/.bashrc"]
 RUN source /home/DAMASK/env/DAMASK.sh
 RUN make spectral
+RUN make processing
