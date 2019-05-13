@@ -5,6 +5,7 @@ MAINTAINER KedoKudo "chenzhang8722@gmail.com"
 # ENV
 ENV  REFRESHED_AT 2019-05-10
 ENV  DAMASK_ROOT /home/DAMASK
+ENV  PYTHONPATH  /home/DAMASK/python
 ENV  PETSC_DIR   /opt/petsc/latest
 ENV  HDF5_DIR    /opt/hdf5/latest
 SHELL ["/bin/bash", "-c"]
